@@ -1,12 +1,12 @@
 ---
 templateKey: exhibitions-sub-page
-thumbnail: /img/clay-images-4.jpg
+thumbnail: /img/andrew-heald-6dsotlwokzq-unsplash.jpg
 date: 2026-02-23T16:39:45+01:00
-title: Two Cups
-description: There are two cups on the image above
+title: Tennis player
+description: There is a Tennis player
 ---
-# Cups
+## Test
 
 *P﻿ublished for test CMS features*
 
-Two hand-made ceramic cups are place in a center of the table
+Tennis player
