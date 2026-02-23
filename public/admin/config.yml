@@ -2,14 +2,13 @@ backend:
   name: github
   repo: fiodarbardworks/portfolio-site
   branch: main
-  publish_mode: editorial_workflow
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
     delete: "Delete {{collection}} “{{slug}}”"
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
-
+publish_mode: editorial_workflow
 local_backend: true
 media_folder: public/img
 public_folder: /img
