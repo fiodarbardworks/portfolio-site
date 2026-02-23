@@ -3,7 +3,7 @@ templateKey: work-sub-page
 thumbnail: /img/clay-images-6.jpg
 date: 2023-01-03T15:04:10.000Z
 title: Earthen Textures
-description: A study in surface treatment and natural glazes.
+description: A study in surface treatment and natural glazes!
 ---
 ## Surface and Depth
 
