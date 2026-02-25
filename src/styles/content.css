@@ -162,10 +162,21 @@ production stylesheet in assets/built/screen.css using gulp dev
 .post-content-body {
   font-size: 1.9rem;
   line-height: 1.65em;
+  position: relative;
+  width: 75vw;
+  min-width: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  transform: translateX(calc(50vw - 50%));
 }
 @media (max-width: 500px) {
   .post-content-body {
     font-size: 1.7rem;
+    /* Если на мобильных будет слишком широко, раскомментируйте строки ниже: */
+    /* width: auto; 
+       margin-left: 0; 
+       margin-right: 0; 
+       transform: none; */
   }
 }
 
