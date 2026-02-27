@@ -189,6 +189,16 @@ production stylesheet in assets/built/screen.css using gulp dev
   color: var(--color-base);
 }
 
+.post-content-body a {
+  color: #DB8F03; /* Основной голубой цвет */
+  text-decoration: none !important;
+}
+
+.post-content-body a:hover {
+  color: #d48b05; /* Цвет при наведении (чуть темнее) */
+  text-decoration: underline !important;
+}
+
 .post-content-body li {
   word-break: break-word;
 }
