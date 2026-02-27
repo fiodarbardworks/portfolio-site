@@ -168,14 +168,33 @@ production stylesheet in assets/built/screen.css using gulp dev
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
-  column-count: 1;
+  /* Настройка колонок */
+  column-count: 2;          /* Количество колонок на десктопе */
+  column-gap: 4vw;          /* Расстояние между колонками */
 }
 
-/* Накладываем разбивку на колонки только на параграфы текста */
-.post-content-body p {
-  column-count: 2;
-  column-gap: 4vw;
-  margin-bottom: 1.5em;
+/* 1. Заставляем все изображения внутри текста игнорировать колонки */
+.post-content-body img,
+.post-content-body .post-content-image,
+.post-content-body figure {
+  column-span: all;
+  display: block;
+  width: 100%;
+  margin: 2em 0; /* Добавляем отступы сверху и снизу для красоты */
+}
+
+/* 2. То же самое для заголовков, если хотите, чтобы они разделяли текст */
+.post-content-body h1,
+.post-content-body h2,
+.post-content-body h3 {
+  column-span: all;
+  margin-top: 1.5em;
+}
+
+/* 3. Для видео и iframe (если используете) */
+.post-content-body iframe,
+.post-content-body .fluid-width-video-wrapper {
+  column-span: all;
 }
 
 /* Важно: на мобильных устройствах возвращаем одну колонку */
