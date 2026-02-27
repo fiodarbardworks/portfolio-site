@@ -168,6 +168,15 @@ production stylesheet in assets/built/screen.css using gulp dev
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
+  /* Настройка колонок */
+  column-count: 2;          /* Количество колонок на десктопе */
+  column-gap: 4vw;          /* Расстояние между колонками */
+}
+/* Важно: на мобильных устройствах возвращаем одну колонку */
+@media (max-width: 1024px) {
+  .post-content-body {
+    column-count: 1;
+  }
 }
 @media (max-width: 500px) {
   .post-content-body {
