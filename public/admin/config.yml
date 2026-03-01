@@ -18,7 +18,7 @@ collections:
     label: "Основные страницы"
     delete: false
     files:
-      - name: "bio"
+      - name: "about"
         label: "Страница About (Bio)"
         file: "src/content/pages/bio.md"
         fields:
@@ -35,7 +35,7 @@ collections:
           - { label: "Текст страницы", name: "body", widget: "markdown" }
           - { label: "Тип страницы", name: "pagetype", widget: "hidden", default: "main" }
 
-  - name: "work"
+  - name: "works"
     label: "Ваши работы (Works)"
     folder: "src/content/work"
     create: true

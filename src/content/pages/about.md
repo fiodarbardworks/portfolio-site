@@ -2,7 +2,7 @@
 templateKey: about-page
 thumbnail: /img/clay-image-1.jpg
 date: 2023-03-02T10:17:05.133Z
-title: /about
+title: about
 description: About fiodarbardworks
 number: 1
 pagetype:
