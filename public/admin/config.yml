@@ -19,13 +19,18 @@ collections:
     delete: false
     files:
       - name: "about"
-        label: "Страница About (Bio)"
-        file: "src/content/pages/bio.md"
+        label: "Страница About"
+        file: "src/content/pages/about.md"
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
           - { label: "Описание (SEO)", name: "description", widget: "text" }
+          - { label: "Порядковый номер", name: "number", widget: "number" }
+          - { label: "Миниатюра (Thumbnail)", name: "thumbnail", widget: "image" }
+          - { label: "Главное изображение", name: "featuredimage", widget: "image" }
+          - { label: "Дата", name: "date", widget: "datetime" }
           - { label: "Текст страницы", name: "body", widget: "markdown" }
-          - { label: "Тип страницы", name: "pagetype", widget: "hidden", default: "main" }
+          - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
+          - { label: "Шаблон", name: "templateKey", widget: "hidden", default: "about-page" }
 
       - name: "contact"
         label: "Страница Контакты"
@@ -33,7 +38,7 @@ collections:
         fields:
           - { label: "Заголовок", name: "title", widget: "string" }
           - { label: "Текст страницы", name: "body", widget: "markdown" }
-          - { label: "Тип страницы", name: "pagetype", widget: "hidden", default: "main" }
+          - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
 
   - name: "works"
     label: "Ваши работы (Works)"
@@ -43,6 +48,6 @@ collections:
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Порядковый номер", name: "number", widget: "number", default: 10 }
-      - { label: "Обложка", name: "image", widget: "image" }
+      - { label: "Обложка", name: "featuredimage", widget: "image" }
       - { label: "Текст работы", name: "body", widget: "markdown" }
-      - { label: "Тип страницы", name: "pagetype", widget: "hidden", default: "main" }
+      - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
