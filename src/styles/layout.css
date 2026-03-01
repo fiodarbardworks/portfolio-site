@@ -208,8 +208,8 @@ footer.site-foot a {
     font-size: 3rem;
     line-height: 1em;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    text-transform: lowercase;
+    letter-spacing: 0px;
 }
 
 .site-head-logo:hover {

@@ -144,6 +144,28 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+      - file: "src/content/pages/work.md"
+        label: "Work"
+        name: "work"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "work-page",
+            }
+          - {
+              label: "Thumbnail",
+              name: "thumbnail",
+              widget: image,
+              choose_url: false,
+            }
+          - { label: "Date", name: "date", widget: "date" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Numbering", name: "number", widget: "number" }
+          
       - file: "src/content/pages/bio.md"
         label: "Bio"
         name: "bio"
@@ -173,28 +195,6 @@ collections:
               options: [{ label: "Main", value: "main" }],
             }
           - { label: "Body", name: "body", widget: "markdown" }
-
-      - file: "src/content/pages/work.md"
-        label: "Work"
-        name: "work"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "work-page",
-            }
-          - {
-              label: "Thumbnail",
-              name: "thumbnail",
-              widget: image,
-              choose_url: false,
-            }
-          - { label: "Date", name: "date", widget: "date" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Numbering", name: "number", widget: "number" }
 
       - file: "src/content/pages/sold.md"
         label: "exhibitions"

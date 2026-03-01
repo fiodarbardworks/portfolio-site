@@ -125,6 +125,11 @@ production stylesheet in assets/built/screen.css using gulp dev
   text-align: center;
 }
 
+.site-head-logo {
+    letter-spacing: -1em; /* Слегка прижимаем буквы друг к другу */
+    /* Если нужно еще плотнее, попробуйте -0.05em */
+}
+
 .post-content-excerpt {
   margin: -2vw 0 3vw;
   font-size: 2.2rem;
