@@ -42,15 +42,14 @@ collections:
 
   - name: "works"
     label: "Ваши проекты (Индивидуальные работы)"
-    folder: "src/content/work"
+    folder: "src/content/work" # Убедитесь, что папка именно тут, а не в src/pages/work
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
-      - { label: "Порядковый номер", name: "number", widget: "number", default: 10 }
-      - { label: "Миниатюра (Thumbnail)", name: "thumbnail", widget: "image" }
-      - { label: "Главное изображение", name: "featuredimage", widget: "image" }
       - { label: "Дата", name: "date", widget: "datetime" }
       - { label: "Описание (SEO)", name: "description", widget: "text" }
+      - { label: "Обложка (Thumbnail)", name: "thumbnail", widget: "image" }
       - { label: "Текст работы", name: "body", widget: "markdown" }
-      - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
+      - { label: "Шаблон", name: "templateKey", widget: "hidden", default: "work-sub-page" }
+Почему это должно сработать:
