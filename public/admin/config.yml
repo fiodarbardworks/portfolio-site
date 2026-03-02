@@ -41,13 +41,16 @@ collections:
           - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
 
   - name: "works"
-    label: "Ваши работы (Works)"
+    label: "Ваши проекты (Индивидуальные работы)"
     folder: "src/content/work"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Порядковый номер", name: "number", widget: "number", default: 10 }
-      - { label: "Обложка", name: "featuredimage", widget: "image" }
+      - { label: "Миниатюра (Thumbnail)", name: "thumbnail", widget: "image" }
+      - { label: "Главное изображение", name: "featuredimage", widget: "image" }
+      - { label: "Дата", name: "date", widget: "datetime" }
+      - { label: "Описание (SEO)", name: "description", widget: "text" }
       - { label: "Текст работы", name: "body", widget: "markdown" }
       - { label: "Тип страницы", name: "pagetype", widget: "list", default: ["main"] }
