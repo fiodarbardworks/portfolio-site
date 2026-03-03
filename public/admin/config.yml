@@ -52,4 +52,3 @@ collections:
       - { label: "Обложка (Thumbnail)", name: "thumbnail", widget: "image" }
       - { label: "Текст работы", name: "body", widget: "markdown" }
       - { label: "Шаблон", name: "templateKey", widget: "hidden", default: "work-sub-page" }
-Почему это должно сработать:
